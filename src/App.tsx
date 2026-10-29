@@ -139,7 +139,7 @@ export default function App() {
     }
   }), [weeks, timeMode])
 
-  const selected = data.find(item => item.week === week?.week) ?? data[0]
+ 
   const utcFormat = (date: Date, timezone: string) => timeMode === 'utc' ? formatTime(date) + ' UTC' : formatTime(date, timezone)
 
   const downloadCsv = () => {
